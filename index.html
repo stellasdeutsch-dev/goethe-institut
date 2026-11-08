@@ -661,6 +661,67 @@ input.rg:hover::-webkit-slider-thumb{scale:1.15}
   .day{height:auto}
   .day-s{position:static;height:auto}
 }
+/*vz*/
+.zg{margin-top:34px}
+.zgc{background:#fff;color:var(--ink);border-radius:20px;overflow:hidden;transition:translate .22s}
+.zgc:hover{translate:0 -4px}
+.zgc svg{display:block;width:100%;height:auto}
+.zgc figcaption,.zgt{padding:14px 16px 16px;display:grid;gap:4px}
+.zgn{font:800 clamp(26px,2.4vw,32px)/1 var(--head);hyphens:manual;-webkit-hyphens:manual}
+.zgr{font-size:15px;line-height:1.35;color:var(--mu);text-wrap:pretty}
+figure.zgc{margin:0}
+/* press */
+.zpress{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:22px}
+.zp{background:var(--pa);border-radius:18px;padding:14px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:6px;transition:translate .22s;text-align:center}
+.zp:hover{translate:0 -4px}
+.zp .v1{font:600 18px/1.1 var(--body)}
+.zp svg{width:100%;height:auto;max-width:200px}
+.zp .n2{font:800 clamp(28px,2.6vw,36px)/1 var(--head);display:flex;gap:6px;align-items:baseline;flex-wrap:wrap;justify-content:center;hyphens:manual;-webkit-hyphens:manual}
+.zp .n2 em{font-style:normal;color:var(--or)}
+.zp .n2 b{font-weight:800;color:var(--or)}
+.zp img{height:64px;width:auto;object-fit:contain;margin-top:2px}
+@media (max-width:760px){.zpress{grid-template-columns:1fr 1fr}.zp .v1{font-size:17px}.zp .n2{flex-direction:column;align-items:center;gap:1px}}
+/* exam outcomes */
+.zout{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:38px}
+@media (max-width:760px){.zout{grid-template-columns:1fr}}
+/* reader */
+.zread{max-width:900px;margin:30px auto 0}
+.zread svg{width:100%;height:clamp(210px,27vw,330px)}
+.zread .zgt{text-align:center}
+.zread .zgn{font-size:clamp(30px,3.2vw,42px)}
+/* am chain */
+.zam{display:grid;grid-template-columns:minmax(0,1fr) 42px minmax(0,1fr) 42px minmax(0,1fr);align-items:stretch;gap:0;margin-top:40px}
+.zam-a{display:flex;align-items:center;justify-content:center;color:var(--or)}
+.zam-a svg{width:34px;height:34px;flex:none}
+.zam figure{margin:0;display:flex;flex-direction:column}
+.zam figure>:first-child{flex:1 1 auto}
+.zamr{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 16px;margin-top:20px;padding:20px 22px;background:var(--bk);color:#fff;border-radius:20px;transition:translate .22s}
+.zamr:hover{translate:0 -3px}
+.zamr b{font:800 clamp(26px,2.8vw,36px)/1.05 var(--head);text-align:center;hyphens:manual;-webkit-hyphens:manual}
+.zamr b em{font-style:normal;color:var(--gd)}
+.zamr span{font-size:15px;color:#D8D8DC}
+.zchips{position:relative;display:flex;align-items:center;justify-content:center;gap:12px;padding:30px 12px;min-height:150px;background:var(--pa)}
+.zchips svg{width:60px;height:auto;flex:none}
+.zchip{display:grid;place-items:center;min-width:64px;min-height:54px;padding:0 12px;border-radius:12px;background:var(--bk);color:#fff;font:800 28px/1 var(--head)}
+.zchip.o{background:var(--or)}
+.zpz{position:relative;background:var(--pa)}
+.zpz span{position:absolute;display:grid;place-items:center;transform:translate(-50%,-50%);font:800 clamp(22px,2.2vw,30px)/1 var(--head);color:#fff}
+@media (max-width:760px){.zam{grid-template-columns:1fr}.zam-a{height:44px}.zam-a svg{transform:rotate(90deg)}.zpz span{font-size:26px}.zchips{min-height:120px}}
+/* targets */
+.zt-w{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:16px;margin-bottom:clamp(36px,5vw,60px)}
+.zt-c{background:#fff;color:var(--ink);border-radius:20px;padding:20px 22px 22px;transition:translate .22s;display:flex;flex-direction:column;gap:12px}
+.zt-c:hover{translate:0 -4px}
+.zt-c h3{font:800 clamp(26px,2.4vw,32px)/1 var(--head);hyphens:manual;-webkit-hyphens:manual}
+.zt-c p{font-size:15px;line-height:1.36;color:var(--mu);text-wrap:pretty;margin:0}
+.zt1 svg{width:min(240px,100%);height:auto;margin:0 auto;display:block}
+.zt4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.zt4 div{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.zt4 svg{width:100%;max-width:150px;height:auto;display:block}
+.zt4 b{font-size:15px;font-weight:600;line-height:1.15}
+.zt4 small{font-size:13px;color:var(--mu);line-height:1.2}
+.zt4 small.fail{color:#D0491F;font-weight:600}
+@media (max-width:760px){.zt-w{grid-template-columns:1fr}.zt4{grid-template-columns:1fr 1fr;gap:14px}.zt4 svg{max-width:120px}}
+/*/vz*/
 </style>
 
 </head>
@@ -895,6 +956,18 @@ input.rg:hover::-webkit-slider-thumb{scale:1.15}
         <span class="bb" id="bb" style="background:none;box-shadow:none"><img src="media/o-trophy.webp" alt="" width="52" height="54" style="width:52px;height:auto;max-width:none"></span>
       </div>
       <div class="goal-r" id="goalr" style="margin-top:0;border-radius:0 0 20px 20px" aria-live="polite"></div>
+<!--vz-->
+      <figure class="zread zgc" id="zgRead"><svg viewBox="0 0 1000 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="За стойкой чиновник рассматривает листок через лупу, слова посетителя зачёркнуты">
+<rect width="1000" height="360" fill="#F7E8C9"/><rect y="290" width="1000" height="70" fill="#E9D4A5"/>
+<rect x="40" y="56" width="150" height="120" rx="6" fill="#fff" opacity=".55"/><rect x="810" y="56" width="150" height="120" rx="6" fill="#fff" opacity=".55"/>
+<g id="zgC1"><path d="M250 290c4-74 24-116 56-116s52 42 56 116z" fill="#2F78E4"/><circle cx="306" cy="136" r="34" fill="#E5B79A"/><path d="M272 120a34 34 0 0 1 66-2l-5 6c-12-3-22-7-30-12-8 8-18 10-31 8z" fill="#46361A"/></g>
+<g id="zgB1"><path d="M340 60h128a14 14 0 0 1 14 14v54a14 14 0 0 1-14 14h-96l-30 24v-24h-2a14 14 0 0 1-14-14V74a14 14 0 0 1 14-14z" fill="#fff"/><path d="M352 80h104M352 100h104M352 120h70" stroke="#C9CDD4" stroke-width="7" stroke-linecap="round"/><path d="M340 62 480 142" stroke="#E5261A" stroke-width="7" stroke-linecap="round"/></g>
+<rect x="510" y="190" width="300" height="100" fill="#141416"/><rect x="496" y="180" width="328" height="16" rx="4" fill="#2B2B30"/>
+<g id="zgC2"><path d="M620 180c4-46 22-74 46-74s42 28 46 74z" fill="#FF6A1A"/><circle cx="666" cy="84" r="30" fill="#E5B79A"/><path d="M636 74c8-30 52-30 60 0-16-10-44-10-60 0z" fill="#46361A"/><rect x="650" y="96" width="32" height="5" rx="2" fill="#46361A"/></g>
+<g id="zgP"><rect x="538" y="96" width="96" height="124" rx="4" fill="#fff" stroke="#141416" stroke-width="3" transform="rotate(-8 586 158)"/><g transform="rotate(-8 586 158)"><path d="M554 122h66M554 140h66M554 158h40" stroke="#C9CDD4" stroke-width="5" stroke-linecap="round"/><circle cx="604" cy="194" r="18" fill="#EBD19C" stroke="#C9A45E" stroke-width="3"/><path d="m596 194 6 6 11-12" fill="none" stroke="#46361A" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+<g id="zgL"><circle cx="608" cy="150" r="42" fill="#fff" fill-opacity=".3" stroke="#141416" stroke-width="8"/><path d="M638 182l32 34" stroke="#141416" stroke-width="12" stroke-linecap="round"/></g>
+</svg><figcaption class="zgt"><span class="zgn">Чиновник словам не верит</span><span class="zgr">Чиновник верит бумаге. Уровень задаёт тот, кто читает сертификат</span></figcaption></figure>
+<!--/vz-->
     </div>
   </div>
 </section>
@@ -953,6 +1026,9 @@ input.rg:hover::-webkit-slider-thumb{scale:1.15}
         <div class="cm"><h3>По-русски</h3><p>читать → <b>чтение</b>. Слово надо менять. И&nbsp;угадывать, какой суффикс.</p></div>
         <div class="cm"><h3>По-немецки</h3><p>lesen → <b lang="de">das Lesen</b>. Одна большая буква. Немцы не любят лишнюю работу.</p></div>
       </div>
+<!--vz-->
+      <div class="zpress stg" id="zgPress"><div class="zp"><span class="v1" lang="de">lesen</span><svg viewBox="0 0 200 150" role="img" aria-label="Пресс"><rect x="26" y="20" width="12" height="118" rx="3" fill="#141416"/><rect x="162" y="20" width="12" height="118" rx="3" fill="#141416"/><rect x="16" y="10" width="168" height="18" rx="5" fill="#141416"/><rect x="14" y="130" width="172" height="14" rx="4" fill="#2B2B30"/><g class="zh"><rect x="93" y="28" width="14" height="34" fill="#66666E"/><rect x="54" y="56" width="92" height="30" rx="7" fill="#FF6A1A"/></g><rect class="zw" x="62" y="116" width="76" height="14" rx="4" fill="#EBD19C"/></svg><span class="n2" lang="de"><em>das</em><span><b>L</b>esen</span></span><img src="media/o-book.webp" alt="Книга" width="300" height="187" loading="lazy"></div><div class="zp"><span class="v1" lang="de">hören</span><svg viewBox="0 0 200 150" role="img" aria-label="Пресс"><rect x="26" y="20" width="12" height="118" rx="3" fill="#141416"/><rect x="162" y="20" width="12" height="118" rx="3" fill="#141416"/><rect x="16" y="10" width="168" height="18" rx="5" fill="#141416"/><rect x="14" y="130" width="172" height="14" rx="4" fill="#2B2B30"/><g class="zh"><rect x="93" y="28" width="14" height="34" fill="#66666E"/><rect x="54" y="56" width="92" height="30" rx="7" fill="#FF6A1A"/></g><rect class="zw" x="62" y="116" width="76" height="14" rx="4" fill="#EBD19C"/></svg><span class="n2" lang="de"><em>das</em><span><b>H</b>ören</span></span><img src="media/o-phones.webp" alt="Наушники" width="280" height="269" loading="lazy"></div><div class="zp"><span class="v1" lang="de">schreiben</span><svg viewBox="0 0 200 150" role="img" aria-label="Пресс"><rect x="26" y="20" width="12" height="118" rx="3" fill="#141416"/><rect x="162" y="20" width="12" height="118" rx="3" fill="#141416"/><rect x="16" y="10" width="168" height="18" rx="5" fill="#141416"/><rect x="14" y="130" width="172" height="14" rx="4" fill="#2B2B30"/><g class="zh"><rect x="93" y="28" width="14" height="34" fill="#66666E"/><rect x="54" y="56" width="92" height="30" rx="7" fill="#FF6A1A"/></g><rect class="zw" x="62" y="116" width="76" height="14" rx="4" fill="#EBD19C"/></svg><span class="n2" lang="de"><em>das</em><span><b>S</b>chreiben</span></span><img src="media/o-pen.webp" alt="Ручка" width="280" height="265" loading="lazy"></div><div class="zp"><span class="v1" lang="de">sprechen</span><svg viewBox="0 0 200 150" role="img" aria-label="Пресс"><rect x="26" y="20" width="12" height="118" rx="3" fill="#141416"/><rect x="162" y="20" width="12" height="118" rx="3" fill="#141416"/><rect x="16" y="10" width="168" height="18" rx="5" fill="#141416"/><rect x="14" y="130" width="172" height="14" rx="4" fill="#2B2B30"/><g class="zh"><rect x="93" y="28" width="14" height="34" fill="#66666E"/><rect x="54" y="56" width="92" height="30" rx="7" fill="#FF6A1A"/></g><rect class="zw" x="62" y="116" width="76" height="14" rx="4" fill="#EBD19C"/></svg><span class="n2" lang="de"><em>das</em><span><b>S</b>prechen</span></span><img src="media/o-mic.webp" alt="Микрофон" width="197" height="347" loading="lazy"></div></div>
+<!--/vz-->
     </div>
   </div>
 </section>
@@ -1014,6 +1090,22 @@ input.rg:hover::-webkit-slider-thumb{scale:1.15}
           <div class="ex"><button class="say" type="button" data-say="Ich bin durchgefallen." aria-label="Послушать"><svg class="ic"><use href="#i-volume-2"/></svg></button><div><p class="de" lang="de">Ich bin durchgefallen.</p><p class="ru">Не сдал. Дословно провалился насквозь</p></div></div>
         </div>
       </div>
+<!--vz-->
+      <div class="zout stg" id="zgOut">
+        <figure class="zgc"><svg viewBox="0 0 360 220" role="img" aria-label="Человек выходит из двери экзамена с листком, над головой вопрос"><rect width="360" height="220" fill="#F4F4F1"/><rect y="186" width="360" height="34" fill="#E6E6E2"/>
+<rect x="50" y="28" width="100" height="158" rx="4" fill="#2F78E4"/><rect x="60" y="38" width="80" height="140" fill="#D9E6FB"/><circle cx="130" cy="112" r="5" fill="#141416"/>
+<g class="zg-w"><circle cx="218" cy="76" r="22" fill="#141416"/><path d="M186 186c2-48 14-78 32-78s30 30 32 78z" fill="#141416"/><rect x="248" y="110" width="44" height="58" rx="4" fill="#fff" stroke="#141416" stroke-width="3" transform="rotate(8 270 139)"/><path d="M262 128h18M260 142h18" stroke="#C9CDD4" stroke-width="4" stroke-linecap="round" transform="rotate(8 270 139)"/></g>
+<g id="zgQ"><path d="M292 42a16 16 0 1 1 22 15c-4 2-7 5-7 10" fill="none" stroke="#FF6A1A" stroke-width="7" stroke-linecap="round"/><circle cx="307" cy="82" r="5" fill="#FF6A1A"/></g></svg><figcaption><span class="zgn" lang="de">gemacht</span><span class="zgr">Сходил на экзамен. Результат неизвестен</span></figcaption></figure>
+        <figure class="zgc"><svg viewBox="0 0 360 220" role="img" aria-label="Листок с печатью о сданном экзамене"><rect width="360" height="220" fill="#F4F4F1"/><rect y="186" width="360" height="34" fill="#E6E6E2"/>
+<rect x="104" y="30" width="152" height="172" rx="6" fill="#fff" stroke="#141416" stroke-width="3" transform="rotate(-3 180 116)"/>
+<g transform="rotate(-3 180 116)" stroke="#C9CDD4" stroke-width="6" stroke-linecap="round"><path d="M126 62h108M126 84h108M126 106h66"/></g>
+<g id="zgS"><circle cx="212" cy="146" r="40" fill="#fff" stroke="#2F78E4" stroke-width="7"/><path d="m194 146 14 14 26-30" fill="none" stroke="#2F78E4" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></g></svg><figcaption><span class="zgn" lang="de">bestanden</span><span class="zgr">Сдал успешно. Вот это повод</span></figcaption></figure>
+        <figure class="zgc"><svg viewBox="0 0 360 220" role="img" aria-label="Человек проваливается в дыру в полу"><rect width="360" height="220" fill="#F4F4F1"/><rect y="150" width="360" height="70" fill="#E6E6E2"/>
+<ellipse cx="180" cy="166" rx="112" ry="34" fill="#141416"/>
+<g id="zgF"><path d="M178 20c-3 34-3 62 0 98h22c3-36 3-64 0-98z" fill="#FF6A1A"/><circle cx="189" cy="136" r="20" fill="#E5B79A"/><path d="M172 26l-26 28M204 26l28 26" stroke="#FF6A1A" stroke-width="14" stroke-linecap="round"/><path d="M180 44c-3-20-2-28 0-34M198 44c3-20 2-28 0-34" stroke="#141416" stroke-width="10" stroke-linecap="round"/></g>
+<g stroke="#66666E" stroke-width="3.500" stroke-linecap="round"><path d="M78 130l10 8M60 148l12 3M280 130l-10 8M300 150l-13 2"/></g></svg><figcaption><span class="zgn" lang="de">durchgefallen</span><span class="zgr">Не сдал. Дословно провалился насквозь</span></figcaption></figure>
+      </div>
+<!--/vz-->
     </div>
   </div>
 </section>
@@ -1030,6 +1122,19 @@ input.rg:hover::-webkit-slider-thumb{scale:1.15}
       <article class="ec"><div class="ec-sw" lang="de"><span class="bad">Ich habe B1 Zertifikat</span><span class="ok">Ich habe ein B1-Zertifikat</span></div><p>das Zertifikat. Перед ним ein. Между уровнем и&nbsp;словом дефис.</p><div class="ec-b"><button class="say" type="button" data-say="Ich habe ein B1-Zertifikat." aria-label="Послушать"><svg class="ic"><use href="#i-volume-2"/></svg></button>У&nbsp;меня есть сертификат B1</div></article>
       <article class="ec"><div class="ec-sw"><span class="bad">Сначала A1, потом A2</span><span class="ok">Сразу нужный уровень</span></div><p>Экзамен не привязан к&nbsp;сертификату уровнем ниже. Коллекцию собирать не обязательно.</p><div class="ec-b"><span class="ii2" style="margin:0;width:42px;height:42px"><svg class="ic"><use href="#i-shuffle"/></svg></span>Лестницу можно перепрыгнуть</div></article>
     </div>
+<!--vz-->
+    <div class="zam" id="zgAm">
+      <figure class="zgc"><svg viewBox="0 0 300 150" role="img" aria-label="Здание института"><rect width="300" height="150" fill="#F4F4F1"/><path d="M150 18 256 56H44z" fill="#2F78E4"/><rect x="60" y="56" width="180" height="70" fill="#fff" stroke="#C9CDD4" stroke-width="2"/><g fill="#D9E6FB"><rect x="74" y="66" width="30" height="50" rx="2"/><rect x="196" y="66" width="30" height="50" rx="2"/></g><rect x="130" y="72" width="40" height="54" rx="3" fill="#141416"/><rect x="40" y="126" width="220" height="10" fill="#C9CDD4"/></svg><figcaption><span class="zgn" lang="de">das Institut</span><span class="zgr">Institut среднего рода</span></figcaption></figure>
+      <div class="zam-a" aria-hidden="true"><svg viewBox="0 0 34 34"><path d="M4 17h24M19 8l9 9-9 9" fill="none" stroke="currentColor" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <figure class="zgc"><div class="zchips"><span class="zchip" lang="de">das</span><svg viewBox="0 0 60 24" aria-hidden="true"><path d="M4 12h44M38 3l10 9-10 9" fill="none" stroke="#141416" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="zchip o" lang="de">dem</span></div><figcaption><span class="zgn" lang="de">Dativ</span><span class="zgr">Dativ даёт dem</span></figcaption></figure>
+      <div class="zam-a" aria-hidden="true"><svg viewBox="0 0 34 34"><path d="M4 17h24M19 8l9 9-9 9" fill="none" stroke="currentColor" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <figure class="zgc"><div class="zpz"><svg viewBox="0 0 300 150" role="img" aria-label="Две детали пазла соединяются в одну"><rect width="300" height="150" fill="#F4F4F1"/>
+<g id="zgA"><path d="M14 46h58v22a11 11 0 1 1 0 20v22H14z" fill="#2F78E4"/></g>
+<g id="zgB"><path d="M74 46h76v66H74V88a11 11 0 1 0 0-20z" fill="#FF6A1A"/></g>
+<path d="M160 79h24M174 69l10 10-10 10" fill="none" stroke="#141416" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M196 46h90v66h-90z" fill="#141416"/></svg><span style="left:14.500%;top:52%" lang="de">an</span><span style="left:39%;top:52%" lang="de">dem</span><span style="left:80.300%;top:52%;color:var(--gd)" lang="de">am</span></div><figcaption><span class="zgn" lang="de"><span style="color:var(--or)">am</span> = an + dem</span><span class="zgr">Две детали, одно слово</span></figcaption></figure>
+    </div>
+    <div class="zamr"><b lang="de">Ich lerne <em>am</em> Goethe-Institut</b><span>Я&nbsp;учусь в&nbsp;Институте Гёте</span></div>
+<!--/vz-->
   </div>
 </section>
 
@@ -1057,6 +1162,17 @@ input.rg:hover::-webkit-slider-thumb{scale:1.15}
           <div class="ocd"><h3>Порог <span class="v">60 из 100</span></h3><div class="gauge" id="gauge"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="16"/><circle id="garc" cx="60" cy="60" r="50" fill="none" stroke="#fff" stroke-width="16" pathLength="100" stroke-dasharray="100" stroke-dashoffset="28" transform="rotate(-90 60 60)"/><line x1="60" y1="-2" x2="60" y2="26" stroke="#141416" stroke-width="5" transform="rotate(216 60 60)"/></svg><div><b id="gv">72</b><span id="gs" lang="de">bestanden</span></div></div><input class="rg" id="gr" type="range" min="0" max="100" value="72" aria-label="Баллы за модуль"><p style="margin-top:12px">Двигай баллы. На B1–C2 порог в&nbsp;каждом модуле отдельно. Блестящий Sprechen не спасёт Lesen.</p></div>
         </div>
       </div>
+<!--vz-->
+      <div class="zt-w" id="zgT">
+        <div class="zt-c zt1"><h3>A1 и&nbsp;A2 это один выстрел</h3><svg viewBox="0 0 120 120" role="img" aria-label="Одна мишень, одна стрела"><circle cx="60" cy="60" r="58" fill="#EBD19C"/><circle cx="60" cy="60" r="46" fill="#fff"/><circle cx="60" cy="60" r="34" fill="#3B86F2"/><circle cx="60" cy="60" r="22" fill="#fff"/><circle cx="60" cy="60" r="10" fill="#FF6A1A"/><g class="zta" transform="translate(60 62)"><path d="M0 0l26-26" stroke="#141416" stroke-width="4" stroke-linecap="round"/><path d="M0 0l9 1-1-9z" fill="#141416"/><path d="M26-26l10-2-3 10z" fill="#FF6A1A"/></g></svg><p>Сдаются целиком. Не вышло, пересдаёшь всё.</p></div>
+        <div class="zt-c"><h3>B1–C2: четыре мишени</h3><div class="zt4">
+          <div><svg viewBox="0 0 120 120" role="img" aria-label="Промах в Lesen"><circle cx="60" cy="60" r="58" fill="#EBD19C"/><circle cx="60" cy="60" r="46" fill="#fff"/><circle cx="60" cy="60" r="34" fill="#3B86F2"/><circle cx="60" cy="60" r="22" fill="#fff"/><circle cx="60" cy="60" r="10" fill="#FF6A1A"/><g class="zta" transform="translate(20 100)"><path d="M0 0l26-26" stroke="#141416" stroke-width="4" stroke-linecap="round"/><path d="M0 0l9 1-1-9z" fill="#141416"/><path d="M26-26l10-2-3 10z" fill="#FF6A1A"/></g></svg><b lang="de">Lesen</b><small class="fail">пересдать</small></div>
+          <div><svg viewBox="0 0 120 120" role="img" aria-label="Попадание в Hören"><circle cx="60" cy="60" r="58" fill="#EBD19C"/><circle cx="60" cy="60" r="46" fill="#fff"/><circle cx="60" cy="60" r="34" fill="#3B86F2"/><circle cx="60" cy="60" r="22" fill="#fff"/><circle cx="60" cy="60" r="10" fill="#FF6A1A"/><g class="zta" transform="translate(60 58)"><path d="M0 0l26-26" stroke="#141416" stroke-width="4" stroke-linecap="round"/><path d="M0 0l9 1-1-9z" fill="#141416"/><path d="M26-26l10-2-3 10z" fill="#FF6A1A"/></g></svg><b lang="de">Hören</b></div>
+          <div><svg viewBox="0 0 120 120" role="img" aria-label="Попадание в Schreiben"><circle cx="60" cy="60" r="58" fill="#EBD19C"/><circle cx="60" cy="60" r="46" fill="#fff"/><circle cx="60" cy="60" r="34" fill="#3B86F2"/><circle cx="60" cy="60" r="22" fill="#fff"/><circle cx="60" cy="60" r="10" fill="#FF6A1A"/><g class="zta" transform="translate(62 62)"><path d="M0 0l26-26" stroke="#141416" stroke-width="4" stroke-linecap="round"/><path d="M0 0l9 1-1-9z" fill="#141416"/><path d="M26-26l10-2-3 10z" fill="#FF6A1A"/></g></svg><b lang="de">Schreiben</b></div>
+          <div><svg viewBox="0 0 120 120" role="img" aria-label="Попадание в Sprechen"><circle cx="60" cy="60" r="58" fill="#EBD19C"/><circle cx="60" cy="60" r="46" fill="#fff"/><circle cx="60" cy="60" r="34" fill="#3B86F2"/><circle cx="60" cy="60" r="22" fill="#fff"/><circle cx="60" cy="60" r="10" fill="#FF6A1A"/><g class="zta" transform="translate(58 60)"><path d="M0 0l26-26" stroke="#141416" stroke-width="4" stroke-linecap="round"/><path d="M0 0l9 1-1-9z" fill="#141416"/><path d="M26-26l10-2-3 10z" fill="#FF6A1A"/></g></svg><b lang="de">Sprechen</b></div>
+        </div><p>Пересдаёшь только нужный модуль. Блестящий <span lang="de">Sprechen</span> не спасёт <span lang="de">Lesen</span>.</p></div>
+      </div>
+<!--/vz-->
     </div>
   </div>
   <div class="wrap">
@@ -1737,6 +1853,34 @@ function goetheInit(){
   $$('video.vid').forEach(function(v){ v.muted=true; pio ? pio.observe(v) : (v.poster=v.dataset.poster); if(reduce) return;
     whenVisible(v, function(){ try{ v.preload='auto'; var p=v.play(); p&&p.catch(function(){}); }catch(e){} }, function(){ try{ v.pause(); }catch(e){} }); });
 
+/*vz*/
+  if(G && !reduce){
+    /* topic visuals: transforms only, final state is the markup */
+    var zOn = function(sel, fn, st){ var e = $(sel); if(e) ScrollTrigger.create({trigger:e, start:st||'top 82%', once:true, onEnter:fn}); };
+    zOn('#zgPress', function(){
+      G.fromTo('.zh', {y:0}, {y:38, duration:.28, ease:'power2.in', stagger:.2, yoyo:true, repeat:1});
+      G.from('.zp .n2', {scale:.7, duration:.55, ease:'back.out(3)', stagger:.2, delay:.3});
+    });
+    zOn('#zgOut', function(){
+      G.fromTo('#zgQ', {rotation:-14,transformOrigin:'50% 100%'}, {rotation:14, duration:.3, yoyo:true, repeat:5, ease:'sine.inOut', onComplete:function(){ G.set('#zgQ',{rotation:0}); }});
+      G.from('#zgS', {scale:2.4, rotation:-24, transformOrigin:'50% 50%', duration:.55, ease:'back.out(2.6)', delay:.35});
+      G.from('#zgF', {y:-54, duration:.85, ease:'power2.in', delay:.25});
+    });
+    G.from('#zgAm figure', {y:30, duration:.6, ease:'power3.out', stagger:.14, scrollTrigger:{trigger:'#zgAm', start:'top 84%', once:true}});
+    zOn('#zgAm', function(){
+      G.from('#zgA', {x:-30, duration:.8, ease:'back.out(1.8)', delay:.4});
+      G.from('#zgB', {x:34, duration:.8, ease:'back.out(1.8)', delay:.4});
+      G.from('#zgAm .zchip.o', {scale:.5, duration:.5, ease:'back.out(3)', delay:.3});
+    });
+    zOn('#zgRead', function(){
+      G.from('#zgL', {x:60, y:-40, duration:1, ease:'power2.inOut'});
+      G.from('#zgB1', {scale:.6, transformOrigin:'0% 100%', duration:.55, ease:'back.out(2.2)', delay:.2});
+    }, 'top 78%');
+    zOn('#zgT', function(){
+      G.from('#zgT .zta', {x:-48, y:48, duration:.5, ease:'power3.in', stagger:.14});
+    });
+  }
+/*/vz*/
   /* dock */
   var dock = $('#dock'), ps = $('.prices');
   if(dock && ps && 'IntersectionObserver' in window){
