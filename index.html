@@ -482,18 +482,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   body{font-size:16.5px}
   :root{--r:30px}
   .tb nav a.opt{display:none}
-  .hero{min-height:0;background:transparent;border-radius:0;overflow:visible;display:flex;flex-direction:column}
-  .hero-shape{display:none}
-  .hero h1{position:static;display:flex;align-items:center;justify-content:center;gap:12px;padding:18px 0 14px}
-  .hero .t1{position:static;font-size:34.5vw;line-height:.86}
-  .hero .t2{position:static;font-size:18.2vw;color:var(--ink);text-align:left}
-  .hero-or{position:relative;left:auto;right:auto;height:118vw;order:2}
-  .hero-b{left:0;right:0;width:96%;margin:0 2%;bottom:0;z-index:3;top:auto}
-  .o1{left:5%;top:6%}.o2{left:80%;top:43%}.o3{left:4%;top:48%}.o4{left:80%;top:6%}
-  .hero-stage{position:relative;order:2;height:118vw}
-  .hero-stage .hero-or{position:absolute;inset:0;height:auto}
-  .hero-lede{position:static;order:3;max-width:none;padding:18px 8px 0}
-  .hero-cta{position:absolute;bottom:18px;left:16px;transform:none;align-items:flex-start}
   .cols4{grid-template-columns:1fr;row-gap:26px;margin-top:44px}
   .rts{grid-template-columns:1fr}
   .stats{grid-template-columns:1fr 1fr}
@@ -539,6 +527,134 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   .dock p b{font-size:22px}
 }
 @media (min-width:721px){ .hero-stage{position:absolute;inset:0} }
+
+/* ---- v2: closer to the reference ---- */
+html,body{background-color:#fff}
+body{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='1700'%3E%3Cg fill='%23F7F7F5'%3E%3Cpath d='M0 120 520 0h300L0 620Z'/%3E%3Cpath d='M1440 720 980 1040l120 240 340-210Z'/%3E%3Cpath d='M180 1160 620 980l-60 330-380 250Z'/%3E%3C/g%3E%3C/svg%3E");background-size:1440px 1700px}
+.h{font-weight:900}
+.o3d{display:block;height:auto;pointer-events:none}
+.fl3d{position:absolute;z-index:2;height:auto;pointer-events:none}
+.pc-i{display:block;width:clamp(84px,8vw,112px);height:auto;margin:6px -6px -12px auto;transition:rotate .3s,scale .3s}
+.pc:hover .pc-i{rotate:-7deg;scale:1.1}
+.pc{display:flex;flex-direction:column}
+.pc p{flex:1}
+.tile-im{display:block;width:100%;max-width:230px;height:auto;margin:-6px auto 2px}
+.ocard-a{position:absolute;right:-30px;bottom:-14px;width:min(58%,300px);height:auto;z-index:1;pointer-events:none}
+.ocard .ringl{position:relative;z-index:2}
+.ocard{min-height:520px}
+.stampb{right:auto;left:22px;bottom:22px}
+@media (min-width:1061px){.hero{min-height:0;aspect-ratio:1384/800}}
+.hero-b{left:24%;width:66.5%}
+.hero-b img{width:100%;height:auto;display:block}
+.hero .t1{font-size:clamp(150px,21.2vw,420px);left:3%}
+.hero .t2{font-size:clamp(100px,13.1vw,260px);right:3%}
+.hero-cta{left:50%;bottom:30px}
+.hero-lv{position:absolute;right:5%;bottom:7%;z-index:5;width:clamp(90px,11vw,160px)}
+.hero-lv img{width:100%;height:auto}
+.o1{left:29%;top:13%}.o2{left:72%;top:66%}.o3{left:14%;top:64%}.o4{left:87%;top:7%}
+.hero-lede{left:4%;bottom:9%}
+.prog{position:relative}
+.prog .orb{left:-22px;top:-22px}
+.prog .fl3d{right:-52px;top:-58px;width:clamp(100px,12vw,170px)}
+.netw{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;margin-top:36px}
+.netw svg{width:100%;height:auto;overflow:visible}
+.netw .stats{grid-template-columns:1fr 1fr;margin-top:0}
+.netw text{font:900 34px var(--head);fill:#fff}
+.who-im{position:relative;max-width:400px;margin:0 auto}
+.who-im>img:first-child{width:100%;height:auto}
+.who-im .gold{position:absolute;left:-8%;bottom:4%;width:44%;height:auto}
+.day-w{position:relative}
+.day-o{position:absolute;right:-14px;top:-62px;width:clamp(92px,11.5vw,160px);height:auto;z-index:4;pointer-events:none}
+.mg{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:84px}
+.mc{background:#fff;color:var(--ink);border-radius:20px;padding:0 20px 20px;display:flex;flex-direction:column;transition:translate .25s,box-shadow .25s}
+.mc:hover{translate:0 -6px;box-shadow:0 22px 40px rgba(0,0,0,.3)}
+.mc .o3d{height:118px;width:auto;max-width:150px;object-fit:contain;margin:-56px auto 8px}
+.mc h3{font:900 42px/1 var(--head);text-align:center;hyphens:none;-webkit-hyphens:none}
+.mc .tr{text-align:center;font-size:15px;color:var(--mu);margin-bottom:10px}
+.mc p{font-size:16px;line-height:1.36;margin:12px 0;flex:1;text-wrap:pretty}
+.mc .say{align-self:center}
+.viz{height:92px;border-radius:14px;background:var(--pa);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.vl{flex-direction:column;align-items:stretch;gap:8px;padding:13px}
+.vl i{display:block;height:9px;border-radius:5px;background:#DADAD5;position:relative;overflow:hidden}
+.vl i:nth-child(2){width:86%}.vl i:nth-child(4){width:64%}
+.vl i::after{content:'';position:absolute;inset:0;background:var(--or);transform:scaleX(0);transform-origin:left}
+.play .vl i:nth-child(2)::after{animation:hi 4s infinite}
+.play .vl i:nth-child(3)::after{animation:hi 4s 1s infinite}
+@keyframes hi{0%{transform:scaleX(0)}28%,70%{transform:scaleX(1)}85%,100%{transform:scaleX(0)}}
+.vh{gap:4px}
+.vh i{width:6px;height:18px;border-radius:4px;background:var(--bl);transform-origin:center}
+.play .vh i{animation:wv 1s ease-in-out infinite alternate;animation-delay:calc(var(--n)*-.13s)}
+@keyframes wv{from{transform:scaleY(.4)}to{transform:scaleY(3.4)}}
+.vw svg{width:88%;height:66px;overflow:visible}
+.vw path{fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0}
+.play .vw path{animation:wr 3.6s infinite}
+@keyframes wr{0%{stroke-dashoffset:1}65%,88%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.vs{flex-direction:column;align-items:stretch;gap:6px;padding:11px 13px}
+.vs b{display:block;height:27px;border-radius:13px;background:var(--bl);width:62%}
+.vs b+b{background:var(--or);width:74%;align-self:flex-end}
+.play .vs b{animation:sp 3.4s infinite}
+.play .vs b+b{animation-delay:1.1s}
+@keyframes sp{0%{transform:scale(.55);transform-origin:left bottom}16%,76%{transform:scale(1)}100%{transform:scale(.55)}}
+.bimg{display:block;width:clamp(84px,9vw,120px);height:auto;margin:20px auto -8px}
+.time-a{position:absolute;right:-6px;bottom:calc(100% - 2px);width:clamp(170px,22vw,300px);height:auto;pointer-events:none;z-index:2}
+#time .bld{position:relative}
+.tot{display:flex;align-items:baseline;justify-content:center;gap:12px;margin-top:22px}
+.tot b{font:900 clamp(70px,8vw,108px)/.9 var(--head);color:var(--or);font-variant-numeric:tabular-nums}
+.tot span{font-size:17px;color:var(--mu)}
+#except .panel{overflow:visible}
+#except .panel>.pt{border-radius:var(--r)}
+.ex2-c{margin-bottom:calc(-1 * clamp(40px,5vw,70px))}
+.ex2-c img{width:118%;max-width:none;margin-left:-9%;height:auto;display:block}
+.gauge{display:flex;align-items:center;gap:16px;margin:12px 0 10px}
+.gauge svg{width:92px;height:92px;flex:none}
+.gauge b{font:900 56px/1 var(--head);font-variant-numeric:tabular-nums}
+.gauge span{display:block;font-weight:600;font-size:16px;hyphens:none}
+input.rg{-webkit-appearance:none;appearance:none;width:100%;height:10px;border-radius:6px;background:rgba(255,255,255,.34);outline-offset:6px;cursor:pointer}
+input.rg::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:#fff;border:6px solid var(--bk);transition:scale .2s}
+input.rg::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#fff;border:6px solid var(--bk)}
+input.rg:hover::-webkit-slider-thumb{scale:1.15}
+.sumc{position:relative}
+.sumc .fl3d{right:-30px;top:-54px;width:clamp(96px,11vw,150px)}
+.lett{position:relative}
+.lett-e{position:absolute;right:-18px;top:-52px;width:clamp(80px,9vw,124px);height:auto;pointer-events:none}
+.qz-side{position:absolute;bottom:0;height:auto;pointer-events:none;width:clamp(180px,21vw,310px)}
+.tb-lk{height:118px;border-radius:14px;background:var(--bl);color:#fff;display:flex;align-items:center;justify-content:center;font-size:44px;margin-top:18px}
+.tb-b{background:var(--bl);color:#fff;border-radius:14px;padding:14px 15px;font-size:15.5px;line-height:1.3;margin-top:18px;text-wrap:pretty}
+.tb-off{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--pa);border-radius:9px;padding:10px;font-size:13px;letter-spacing:.14em;margin-top:14px;color:#3b3b40;font-weight:600;hyphens:none}
+.tb-off.x span{text-decoration:line-through}
+.fan{position:relative}
+#envf{position:absolute;left:0;top:0;width:clamp(60px,6vw,86px);height:auto;z-index:6;pointer-events:none}
+@media (max-width:1060px){
+  .hero{min-height:0;background:transparent;border-radius:0;overflow:visible;display:flex;flex-direction:column}
+  .hero-shape{display:none}
+  .hero h1{position:static;display:flex;align-items:center;justify-content:center;gap:clamp(12px,3vw,34px);padding:18px 0 14px}
+  .hero .t1{position:static;font-size:34.5vw;line-height:.86}
+  .hero .t2{position:static;font-size:18.2vw;color:var(--ink);text-align:left}
+  .hero-stage{position:relative;order:2;height:min(106vw,720px);overflow:hidden;border-radius:var(--r)}
+  .hero-stage .hero-or{position:absolute;inset:0;left:0;height:auto}
+  .hero-b{left:50%;right:auto;width:min(140%,830px);margin:0;transform:translateX(-40%);bottom:0;top:auto;animation:none}
+  .hero-lede{position:static;order:3;max-width:none;padding:18px 8px 0}
+  .hero-cta{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);align-items:center}
+  .hero-lv{right:5%;bottom:auto;top:5%;width:clamp(70px,16vw,130px)}
+  .o1{left:5%;top:6%}.o2{left:82%;top:46%}.o3{left:4%;top:50%}.o4{left:5%;top:27%}
+  .netw{grid-template-columns:1fr}
+  .mg{grid-template-columns:1fr 1fr;row-gap:64px}
+  .prog .fl3d{right:-10px;top:-46px}
+  .ex2-c{display:block;grid-column:1/3;grid-row:1;max-width:300px;margin:-90px auto 0;width:100%}
+  .ex2-c img{width:100%;margin:0}
+  .qz-side{display:none}
+  .ocard{min-height:0}
+  .ocard-a{position:static;display:block;width:min(70%,300px);margin:6px -20px -24px auto}
+  .stampb{left:22px}
+}
+@media (max-width:720px){
+  .mg{grid-template-columns:1fr}
+  .ex2-c{grid-column:1}
+  .time-a{position:static;display:block;margin:-10px auto 10px;width:190px}
+  .day-o{right:-4px;top:-42px;width:84px}
+  .sumc .fl3d{right:-6px}
+  .tot{flex-direction:column;align-items:center;gap:4px}
+}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -617,26 +733,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></symbol>
 
 <pattern id="hex" width="340" height="392" patternUnits="userSpaceOnUse"><path d="M170 8 318 94v172L170 352 22 266V94Z" fill="#1B1B1E" stroke="#222226" stroke-width="10"/></pattern>
-<pattern id="chev" width="560" height="460" patternUnits="userSpaceOnUse"><path d="M40 430 280 50l240 380" fill="none" stroke="#FF7A2E" stroke-width="46" stroke-linejoin="round" stroke-linecap="round"/><path d="M150 430 280 226l130 204" fill="none" stroke="#F4600F" stroke-width="30" stroke-linejoin="round" stroke-linecap="round"/></pattern>
-<symbol id="bust" viewBox="0 0 640 820">
-  <path fill="#F5F3EE" d="M330 70C395 62 452 90 478 140c14 28 16 56 14 78-1 14 4 22 8 32-4 8-10 12-10 22 10 24 40 58 56 80 6 10 0 20-12 22-14 2-26 2-34 8 2 10 10 16 10 26 0 6-8 8-14 10 8 6 12 14 8 22-4 8-12 8-14 14 4 16 6 34-4 48-12 18-36 24-62 22-16-2-26 4-28 20-2 36 8 76 36 106l128 70c30 20 50 60 56 110H60c6-50 30-88 66-114l106-52c26-24 36-64 30-108-22-36-72-86-86-156-16-80-6-180 44-260 30-44 70-66 110-70Z"/>
-  <path fill="#DEDAD2" d="M262 556c6 44-4 84-30 108L126 716c-36 26-60 64-66 114h230c-10-70-6-150 40-210 30-40 40-60 62-96-40 30-80 40-130 32Z"/>
-  <path fill="#CFCAC0" d="M396 544c-2 36 8 76 36 106-30 8-66-8-84-40-10-18-14-34-12-50 22-6 42-14 60-16Z"/>
-  <path fill="#E7E3DB" d="M440 330c20 10 40 30 44 52-2 14 6 22 14 28-8 8-14 18-10 30 4 18-2 44-18 56-20 14-52 12-74 6-26-8-52-26-68-54 40-6 70-24 90-52 12-20 16-44 22-66Z"/>
-  <path fill="#BFBAAF" d="M500 382c-8 2-20 2-28-6-8 8-12 12-24 10 14 12 38 12 52-4Z"/>
-  <path fill="#C9C4BA" d="M286 830c6-56 30-100 76-132l-34 132Zm134 0c4-36 18-66 46-92l-8 92Z"/>
-  <path fill="#DAD6CD" d="M478 140c-26-50-83-78-148-70-40 4-80 26-110 70-50 80-60 180-44 260 8 40 28 74 48 104 4-40 2-62 16-90 12-22 40-44 50-66 12-28-4-52 12-74 18-26 58-22 86-32 34-12 66-26 90-102Z"/>
-  <path fill="#C4BFB4" d="M220 140c30-44 70-66 110-70 20-2 40 0 58 6-30 6-64 24-86 56-22 34-18 56-40 88-22 30-40 62-42 100-2 40 8 74 22 110-6 8-10 28-14 54-20-30-40-64-48-104-16-80-6-180 40-240Z"/>
-  <g fill="none" stroke="#AFA99D" stroke-width="5" stroke-linecap="round"><path d="M268 120c-30 40-42 88-40 136M322 104c-38 26-58 66-62 116M380 98c-30 12-54 34-66 66M250 300c-14 40-14 84 0 128M204 216c-14 58-12 118 8 176"/></g>
-  <path fill="none" stroke="#8E887C" stroke-width="5" stroke-linecap="round" d="M446 252c14-10 32-10 46 2M452 290c12 8 26 8 38 0M500 382c6 2 8 6 8 8"/>
-  <path fill="none" stroke="#A29C90" stroke-width="3.4" stroke-linecap="round" d="M420 400c-12 26-34 44-62 60M396 340l-38 30 12 34-26 22M430 470l-26 16 2 26"/>
-  <path fill="none" stroke="#8E887C" stroke-width="5" stroke-linecap="round" d="M470 416c12 2 22 2 30 0"/>
-  <!-- headphones -->
-  <path fill="none" stroke="#141416" stroke-width="20" stroke-linecap="butt" d="M336 270C330 190 330 120 340 58"/>
-  <rect x="292" y="262" width="90" height="128" rx="42" fill="#141416"/>
-  <rect x="308" y="278" width="58" height="96" rx="28" fill="#FF6A1A"/>
-  <circle cx="337" cy="326" r="11" fill="#141416"/>
-</symbol>
+<pattern id="chev" width="560" height="460" patternUnits="userSpaceOnUse"><path d="M40 430 280 50l240 380" fill="none" stroke="#FF7529" stroke-width="46" stroke-linejoin="round" stroke-linecap="round"/><path d="M150 430 280 226l130 204" fill="none" stroke="#F7630F" stroke-width="30" stroke-linejoin="round" stroke-linecap="round"/></pattern>
 <symbol id="chevb" viewBox="0 0 10 10"></symbol>
 </defs></svg>
 
@@ -653,19 +750,11 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 <main id="top">
 
 <section class="hero" aria-label="Обложка">
-  <svg class="hero-shape" viewBox="0 0 600 800" preserveAspectRatio="none" aria-hidden="true"><path fill="#F1F1EE" d="M0 0h360L120 800H0Z"/><path fill="#F7F7F5" d="M430 0h170v800H260Z"/></svg>
+  <svg class="hero-shape" viewBox="0 0 600 800" preserveAspectRatio="none" aria-hidden="true"><path fill="#F5F5F3" d="M0 0h360L120 800H0Z"/><path fill="#FAFAF8" d="M430 0h170v800H260Z"/></svg>
   <div class="hero-stage">
     <div class="hero-or"><svg class="pt" aria-hidden="true"><rect width="100%" height="100%" fill="url(#chev)"/></svg></div>
-    <div class="hero-b"><div id="bustp">
-      <svg viewBox="0 0 640 820" role="img" aria-label="Гипсовый бюст Гёте в наушниках и золотая надпись с уровнем экзамена">
-        <use href="#bust"/>
-        <g font-family="'Sofia Sans Extra Condensed','Arial Narrow',sans-serif" font-weight="900" font-size="214" text-anchor="middle">
-          <text class="lvl" x="524" y="744" fill="#9A7433">B1</text>
-          <text class="lvl" x="519" y="739" fill="#C9A45E">B1</text>
-          <text class="lvl" x="514" y="734" fill="#EBD19C">B1</text>
-        </g>
-      </svg>
-    </div></div>
+    <div class="hero-b"><div id="bustp"><img src="media/head-open.webp" alt="Фарфоровая голова андроида" width="817" height="720" fetchpriority="high"></div></div>
+    <div class="hero-lv"><img id="lvimg" src="media/lv-B1.webp" alt="Уровень экзамена" width="211" height="296"></div>
     <span class="orb dk o1" style="--t:-16deg" title="Lesen, чтение"><svg class="ic"><use href="#i-book-open"/></svg></span>
     <span class="orb o2" style="--t:18deg" title="Hören, аудирование"><svg class="ic"><use href="#i-headphones"/></svg></span>
     <span class="orb dk o3" style="--t:-30deg" title="Schreiben, письмо"><svg class="ic"><use href="#i-pen-line"/></svg></span>
@@ -685,23 +774,24 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
     <div class="wrap">
       <h2 class="h c w mega">Я&nbsp;хотел <em>поступить</em> в&nbsp;Гёте</h2>
       <p class="sub c w">Спойлер. Поступить туда нельзя.</p>
-      <div class="cols4 stg">
+      <div class="cols4 stg fan" id="story">
         <article class="pc">
           <div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-target"/></svg></span>План на жизнь</div>
-          <p>У&nbsp;меня был план. План был поступить в&nbsp;Институт Гёте. Институт звучит серьёзно.</p>
+          <p>У&nbsp;меня был план. План был поступить в&nbsp;Институт Гёте. Институт звучит серьёзно.</p><img class="pc-i" src="media/o-cap.webp" alt="" loading="lazy" width="300" height="200">
         </article>
         <article class="pc">
           <div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-mail"/></svg></span>Письмо мечты</div>
-          <p>Серьёзно и&nbsp;подготовился. Написал мотивационное письмо. В&nbsp;первой строке <span class="de" lang="de">Gete Institut</span>. Две ошибки в&nbsp;двух словах. Рекорд.</p>
+          <p>Серьёзно и&nbsp;подготовился. Написал мотивационное письмо. В&nbsp;первой строке <span class="de" lang="de">Gete Institut</span>. Две ошибки в&nbsp;двух словах. Рекорд.</p><img class="pc-i" id="envs" src="media/o-env.webp" alt="" loading="lazy" width="300" height="203">
         </article>
         <article class="pc">
           <div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-building-2"/></svg></span>Приёмная</div>
-          <p>Прихожу. Говорю, мне на факультет. Говорят, какой? Говорю, лучший. Говорят, у&nbsp;нас нет факультетов.</p>
+          <p>Прихожу. Говорю, мне на факультет. Говорят, какой? Говорю, лучший. Говорят, у&nbsp;нас нет факультетов.</p><img class="pc-i" id="envt" src="media/o-stamp.webp" alt="" loading="lazy" width="267" height="315">
         </article>
         <article class="pc">
           <div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-lightbulb"/></svg></span>Что я&nbsp;понял</div>
-          <p>Гёте это не вуз. Диплом тут не дают. Дают курсы и&nbsp;экзамены. Письмо храню до сих пор.</p>
+          <p>Гёте это не вуз. Диплом тут не дают. Дают курсы и&nbsp;экзамены. Письмо храню до сих пор.</p><img class="pc-i" src="media/o-shield.webp" alt="" loading="lazy" width="267" height="307">
         </article>
+        <img id="envf" src="media/o-env.webp" alt="" aria-hidden="true" width="300" height="203">
       </div>
       <p class="punch">Расскажу, чтобы <em>письмо не пришлось</em> писать</p>
     </div>
@@ -712,6 +802,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   <div class="halfbg pad">
     <div class="lo"><svg aria-hidden="true"><rect width="100%" height="100%" fill="url(#chev)"/></svg></div>
     <div class="prog">
+      <span class="orb dk" aria-hidden="true"><svg class="ic"><use href="#i-route"/></svg></span><img class="fl3d float" src="media/o-book.webp" alt="" loading="lazy" width="300" height="187">
       <h2 class="h c mega">Программа</h2>
       <div class="rts stg">
         <a class="rt" href="#what"><b class="pl">1</b><span>Что это<small>Имя, цифры, что внутри</small></span></a>
@@ -735,12 +826,12 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
         <span class="art">das&nbsp;</span><span class="wrd">G<span class="ins">o</span>et<span class="ins">h</span>e</span><span class="tail">-Institut</span>
       </div>
       <div class="nm-c"><span id="nmc">Gete. Такого слова нет.</span><button class="say" type="button" data-say="das Goethe-Institut" aria-label="Послушать: das Goethe-Institut"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
-      <div class="stats stg">
+      <div class="netw"><svg id="net" viewBox="0 0 520 320" role="img" aria-label="Сеть филиалов вокруг Мюнхена"></svg><div class="stats stg">
         <div class="st"><b class="count" data-to="1951" data-plain="1">1951</b><span>год основания</span></div>
         <div class="st"><b class="count" data-to="158">158</b><span>филиалов</span></div>
         <div class="st"><b class="count" data-to="98">98</b><span>стран</span></div>
         <div class="st"><b>München</b><span>штаб-квартира. Мюнхен</span></div>
-      </div>
+      </div></div>
     </div>
   </div>
 </section>
@@ -752,7 +843,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
         <h2 class="h mega"><em>Что</em> внутри</h2>
         <div class="tiles stg">
           <div class="tile"><span class="ii"><svg class="ic"><use href="#i-video"/></svg></span><h3>Курсы A1–C2</h3><p>Очно или онлайн. С&nbsp;преподавателем или без.</p></div>
-          <div class="tile"><span class="ii"><svg class="ic"><use href="#i-badge-check"/></svg></span><h3>Экзамены</h3><p>Шесть уровней. Записаться может любой. Даже если учился не здесь.</p></div>
+          <div class="tile"><img class="tile-im" src="media/o-hand.webp" alt="Рука робота держит сертификат" loading="lazy" width="640" height="367"><h3>Экзамены</h3><p>Шесть уровней. Записаться может любой. Даже если учился не здесь.</p></div>
           <div class="tile"><span class="ii"><svg class="ic"><use href="#i-users"/></svg></span><h3>Возраст</h3><p>Дети от <span class="v">10 лет</span>, молодёжь от <span class="v">14</span>, взрослые от <span class="v">17</span>.</p></div>
           <div class="tile"><span class="ii"><svg class="ic"><use href="#i-book-marked"/></svg></span><h3>Кабинет</h3><p>Регистрация на goethe.de открывает сервисы и&nbsp;библиотеки.</p></div>
         </div>
@@ -766,8 +857,9 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
           <li><span><b>Школы: партнёры будущего</b>: для школ со связями с&nbsp;Германией</span></li>
           <li><span><b>Мост в&nbsp;немецкий университет</b>: для старшеклассников. Платно</span></li>
         </ul>
-        <div style="height:128px"></div>
+        <div style="height:150px"></div>
         <span class="stampb" id="stamp">Не<br>вуз</span>
+        <img class="ocard-a" src="media/o-android.webp" alt="Андроид со стоп-часами" loading="lazy" width="640" height="473">
       </div>
     </div>
   </div>
@@ -782,7 +874,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
         <article class="nc"><div class="nc-t"><span class="ii"><svg class="ic"><use href="#i-briefcase"/></svg></span><b>01</b><svg class="ic ar"><use href="#i-arrow-right"/></svg></div><h3>Работа</h3><p>Плюс на собеседовании в&nbsp;компании, где нужен немецкий.</p></article>
         <article class="nc"><div class="nc-t"><span class="ii"><svg class="ic"><use href="#i-plane"/></svg></span><b>02</b><svg class="ic ar"><use href="#i-arrow-right"/></svg></div><h3>Переезд</h3><p>Виза, гражданство. Чиновник словам не верит. Чиновник верит бумаге.</p></article>
       </div>
-      <div class="who-c"><svg viewBox="0 0 640 820" aria-hidden="true"><use href="#bust"/><g font-family="'Sofia Sans Extra Condensed','Arial Narrow',sans-serif" font-weight="900" font-size="260" text-anchor="middle"><text x="168" y="790" fill="#C9A45E">C2</text><text x="162" y="784" fill="#EBD19C">C2</text></g></svg></div>
+      <div class="who-c"><div class="who-im"><img src="media/head-closed.webp" alt="Фарфоровая скульптура с закрытыми глазами" loading="lazy" width="499" height="720"><img class="gold" id="whoLv" src="media/lv-C2.webp" alt="" loading="lazy" width="235" height="300"></div></div>
       <div class="who-col stg">
         <article class="nc"><div class="nc-t"><span class="ii"><svg class="ic"><use href="#i-graduation-cap"/></svg></span><b>03</b><svg class="ic ar"><use href="#i-arrow-right"/></svg></div><h3>Учёба</h3><p>Тут есть подвох. Открою его в&nbsp;исключениях.</p></article>
         <article class="nc"><div class="nc-t"><span class="ii"><svg class="ic"><use href="#i-medal"/></svg></span><b>04</b><svg class="ic ar"><use href="#i-arrow-right"/></svg></div><h3>Для себя</h3><p>Сдать трудно. Поэтому приятно. Иногда это лучший подарок себе.</p></article>
@@ -800,7 +892,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
       <div class="chips" id="goals"></div>
       <div class="lad" id="lad" aria-hidden="true">
         <div class="sp" style="height:30%">A1</div><div class="sp" style="height:43%">A2</div><div class="sp" style="height:56%">B1</div><div class="sp" style="height:70%">B2</div><div class="sp" style="height:85%">C1</div><div class="sp" style="height:100%">C2</div>
-        <span class="bb" id="bb"><svg class="ic"><use href="#i-star"/></svg></span>
+        <span class="bb" id="bb" style="background:none;box-shadow:none"><img src="media/o-trophy.webp" alt="" width="52" height="54" style="width:52px;height:auto;max-width:none"></span>
       </div>
       <div class="goal-r" id="goalr" style="margin-top:0;border-radius:0 0 20px 20px" aria-live="polite"></div>
     </div>
@@ -821,6 +913,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
           <p class="day-p" id="dp"></p>
           <div class="day-bar"><i id="dbar"></i></div>
         </div>
+        <div class="day-w"><img class="day-o" id="dobj" src="media/o-env.webp" alt="" width="300" height="203">
         <div class="doc" id="doc">
           <div class="doc-h"><span lang="de">Meine Prüfung</span><img src="media/logo.webp" alt="" width="34" height="34"></div>
           <div class="dr"><svg class="ic"><use href="#i-calendar-check"/></svg><span lang="de">die Anmeldung</span><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span></div>
@@ -830,18 +923,28 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
           <div class="dr"><svg class="ic"><use href="#i-list-checks"/></svg><span class="mods" lang="de"><i>Lesen</i><i>Hören</i><i>Schreiben</i><i>Sprechen</i></span></div>
           <div class="dr"><svg class="ic"><use href="#i-file-text"/></svg><span lang="de">das Zertifikat</span><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span></div>
           <span class="doc-st" id="dst" lang="de">bestanden</span>
-        </div>
+        </div></div>
       </div>
     </div>
   </div>
 </section>
 
+<section class="sec" id="mods">
+  <div class="panel k pad">
+    <svg class="pt" aria-hidden="true"><rect width="100%" height="100%" fill="url(#hex)"/></svg>
+    <div class="wrap">
+      <h2 class="h c w mega">Четыре модуля. <em>Четыре характера</em></h2>
+      <div class="mg stg" id="mg"><article class="mc"><img class="o3d" src="media/o-book.webp" alt="" loading="lazy" width="300" height="187"><h3 lang="de">Lesen</h3><p class="tr">чтение</p><div class="viz vl" aria-hidden="true"><i></i><i></i><i></i><i></i></div><p>Текст спокойный. Вопросы нет. Ищешь деталь и&nbsp;чужое мнение.</p><button class="say" type="button" data-say="Lesen" aria-label="Послушать: Lesen"><svg class="ic"><use href="#i-volume-2"/></svg></button></article><article class="mc"><img class="o3d" src="media/o-phones.webp" alt="" loading="lazy" width="280" height="269"><h3 lang="de">Hören</h3><p class="tr">аудирование</p><div class="viz vh" aria-hidden="true"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i><i style="--n:3"></i><i style="--n:4"></i><i style="--n:5"></i><i style="--n:6"></i><i style="--n:7"></i><i style="--n:8"></i><i style="--n:9"></i><i style="--n:10"></i><i style="--n:11"></i><i style="--n:12"></i><i style="--n:13"></i><i style="--n:14"></i><i style="--n:15"></i></div><p>Диктор не ждёт. Перемотки нет.</p><button class="say" type="button" data-say="Hören" aria-label="Послушать: Hören"><svg class="ic"><use href="#i-volume-2"/></svg></button></article><article class="mc"><img class="o3d" src="media/o-pen.webp" alt="" loading="lazy" width="280" height="265"><h3 lang="de">Schreiben</h3><p class="tr">письмо</p><div class="viz vw" aria-hidden="true"><svg viewBox="0 0 220 66" preserveAspectRatio="none"><path pathLength="1" d="M4 44c12-30 20-34 24-26s-10 34-4 34 18-28 26-26-8 26 2 26 16-22 26-20 0 20 10 20 20-24 30-22-2 22 10 22 18-20 28-18 2 18 12 18 22-16 28-14"/></svg></div><p>Письмо по заданию. Обращение, пункты, концовка.</p><button class="say" type="button" data-say="Schreiben" aria-label="Послушать: Schreiben"><svg class="ic"><use href="#i-volume-2"/></svg></button></article><article class="mc"><img class="o3d" src="media/o-mic.webp" alt="" loading="lazy" width="197" height="347"><h3 lang="de">Sprechen</h3><p class="tr">говорение</p><div class="viz vs" aria-hidden="true"><b></b><b></b></div><p>Обычно в&nbsp;паре. Придётся разговаривать с&nbsp;живым человеком.</p><button class="say" type="button" data-say="Sprechen" aria-label="Послушать: Sprechen"><svg class="ic"><use href="#i-volume-2"/></svg></button></article></div>
+    </div>
+  </div>
+</section>
 <section class="sec" id="build">
   <div class="wrap pad" style="padding-top:clamp(30px,4vw,60px)">
     <h2 class="h c mega">Как образуется <em>das Lesen</em></h2>
     <p class="sub c">Все четыре модуля названы одинаково. Был глагол, стала вещь.</p>
     <div class="bld">
       <div class="chips" id="bverb" style="margin-top:0"></div>
+      <img class="bimg" id="bimg" src="media/o-book.webp" alt="" width="300" height="187">
       <div class="bw" id="bw" lang="de"><span class="ar" id="bar">das&nbsp;</span><span><span class="fir" id="bf">l</span><span id="br">esen</span></span></div>
       <p class="bcap" id="bc"></p>
       <div class="bstep" id="bs"></div>
@@ -873,7 +976,9 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
     <h2 class="h c mega"><em>Сколько</em> это длится</h2>
     <p class="sub c">Выбери уровень. Время растёт быстрее, чем уверенность.</p>
     <div class="bld">
+      <img class="time-a" src="media/o-android.webp" alt="Андроид смотрит на стоп-часы" loading="lazy" width="640" height="473">
       <div class="chips" id="tl" style="margin-top:0"></div>
+      <div class="tot"><b id="tmin">165</b><span id="tlab">минут письменной части</span></div>
       <div class="bars" id="bars"></div>
       <p class="note c" id="tnote"></p>
       <p class="note c">Время, части и&nbsp;правила по документам Goethe-Institut. <a href="https://www.goethe.de/pro/relaunch/prf/de/Pruefungsordnung.pdf" target="_blank" rel="noopener"><svg class="ic"><use href="#i-file-text"/></svg>Prüfungsordnung</a></p>
@@ -885,6 +990,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   <div class="panel o pad">
     <svg class="pt" aria-hidden="true"><rect width="100%" height="100%" fill="url(#chev)"/></svg>
     <div class="wrap">
+      <img class="fl3d float" src="media/o-coins.webp" alt="" loading="lazy" width="300" height="263" style="left:3%;top:5%;width:clamp(84px,11vw,160px)">
       <h2 class="h c w mega" style="color:#fff">Сколько стоит листок</h2>
       <div class="chips" id="pa"></div>
       <div class="tcs" id="ptc"></div>
@@ -945,10 +1051,10 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
             <p style="margin-top:14px"><a class="src" style="font-size:14px" href="https://www.goethe.de/pro/relaunch/prf/rahmenordnung/Rahmenordnung-ueber-Deutsche-Sprachpruefungen-fuer-das-Studium-an-deutschen-Hochschulen.pdf" target="_blank" rel="noopener"><svg class="ic"><use href="#i-file-text"/></svg>Рамочные правила HRK и&nbsp;KMK</a></p>
           </div>
         </div>
-        <div class="ex2-c"><svg viewBox="0 0 640 820" aria-hidden="true"><use href="#bust"/></svg></div>
+        <div class="ex2-c"><img id="bustim" src="media/bust.webp" alt="Мраморный бюст Гёте в оранжевых наушниках" loading="lazy" width="469" height="704"></div>
         <div>
           <div class="wcard"><h3>A1 и&nbsp;A2 это один выстрел</h3><p>Сдаются целиком. Не вышло, пересдаёшь всё. На <span class="v">B1–C2</span> четыре мишени: пересдаёшь только нужный модуль.</p></div>
-          <div class="ocd"><h3>Порог <span class="v">60 из 100</span></h3><p>Везде. Но на B1–C2 в&nbsp;каждом модуле отдельно. Блестящий Sprechen не спасёт Lesen.</p></div>
+          <div class="ocd"><h3>Порог <span class="v">60 из 100</span></h3><div class="gauge" id="gauge"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="16"/><circle id="garc" cx="60" cy="60" r="50" fill="none" stroke="#fff" stroke-width="16" pathLength="100" stroke-dasharray="100" stroke-dashoffset="28" transform="rotate(-90 60 60)"/><line x1="60" y1="-2" x2="60" y2="26" stroke="#141416" stroke-width="5" transform="rotate(216 60 60)"/></svg><div><b id="gv">72</b><span id="gs" lang="de">bestanden</span></div></div><input class="rg" id="gr" type="range" min="0" max="100" value="72" aria-label="Баллы за модуль"><p style="margin-top:12px">Двигай баллы. На B1–C2 порог в&nbsp;каждом модуле отдельно. Блестящий Sprechen не спасёт Lesen.</p></div>
         </div>
       </div>
     </div>
@@ -966,6 +1072,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   <div class="halfbg pad">
     <div class="lo"><svg aria-hidden="true"><rect width="100%" height="100%" fill="url(#chev)"/></svg></div>
     <div class="sumc">
+      <img class="fl3d float" src="media/o-trophy.webp" alt="" loading="lazy" width="280" height="291">
       <div>
         <h2 class="h mega"><em>Итог</em></h2>
         <ul class="sl stg">
@@ -989,7 +1096,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
     <h2 class="h c mega">Письмо с <em>пятью минами</em></h2>
     <p class="sub c">Нажимай на слова с&nbsp;ошибкой. Сапёр ошибается один раз. Ты можешь сколько угодно.</p>
     <div class="bld">
-      <div class="lett" id="lett" lang="de"></div>
+      <div style="position:relative"><img class="lett-e float" style="z-index:3" src="media/o-env.webp" alt="" loading="lazy" width="300" height="203"><div class="lett" id="lett" lang="de"></div></div>
       <div class="ex-c"><b class="cnt"><span id="exn">0</span> из 5</b><div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn line" type="button" id="exshow">Показать ответы</button><button class="say" type="button" id="exsay" aria-label="Послушать правильное письмо"><svg class="ic"><use href="#i-volume-2"/></svg></button></div></div>
       <div class="anss" id="anss"></div>
       <p class="note" id="extr" hidden>Перевод: Добрый день! Я&nbsp;хотел бы записаться на экзамен B1. Я&nbsp;учусь в&nbsp;Институте Гёте. Чтение даётся мне легко, но на говорении я&nbsp;нервничаю. Надеюсь, что сдам экзамен.</p>
@@ -1001,6 +1108,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   <div class="panel o pad">
     <svg class="pt" aria-hidden="true"><rect width="100%" height="100%" fill="url(#chev)"/></svg>
     <div class="wrap">
+      <img class="qz-side" src="media/head-closed.webp" alt="" loading="lazy" width="499" height="720" style="left:0;bottom:-104px"><img class="qz-side" src="media/o-mic.webp" alt="" loading="lazy" width="197" height="347" style="right:5%;bottom:-40px;width:clamp(100px,11vw,160px)">
       <h2 class="h c w mega" style="color:#fff">Шесть вопросов. Без бланка</h2>
       <div class="qz" id="qz"></div>
     </div>
@@ -1037,10 +1145,10 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
         <div class="nb"><b><span class="count" data-to="100">100</span>+</b><span>учеников прошли разговорные клубы</span></div>
       </div>
       <div class="cols4 stg">
-        <article class="pc"><div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-book-open"/></svg></span>Грамматика</div><p>Объяснение, видео, упражнение. И&nbsp;ответы с&nbsp;разбором. Как здесь, только <span class="v">340+</span>.</p></article>
-        <article class="pc"><div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-audio-lines"/></svg></span>Слова</div><p>Озвучка, транскрипция, флеш-карты. Умный трекер в&nbsp;Notion следит за повторами.</p></article>
-        <article class="pc"><div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-layers"/></svg></span>Материалы</div><p>Фильмы, книги, подкасты по уровням. Больше не ищешь, что тебе по силам.</p></article>
-        <article class="pc"><div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-sparkles"/></svg></span>Тренажёры</div><p>Интерактивные гайды по темам B1–C1: тексты, диалоги, тесты, чат-партнёр с&nbsp;ИИ.</p></article>
+        <article class="pc"><div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-book-open"/></svg></span>Грамматика</div><p>Объяснение, видео, упражнение. И&nbsp;ответы с&nbsp;разбором. Как здесь, только <span class="v">340+</span>.</p><img class="pc-i" src="media/o-book.webp" alt="" loading="lazy" width="300" height="187"></article>
+        <article class="pc"><div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-audio-lines"/></svg></span>Слова</div><p>Озвучка, транскрипция, флеш-карты. Умный трекер в&nbsp;Notion следит за повторами.</p><img class="pc-i" src="media/o-mic.webp" alt="" loading="lazy" width="197" height="347" style="width:66px"></article>
+        <article class="pc"><div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-layers"/></svg></span>Материалы</div><p>Фильмы, книги, подкасты по уровням. Больше не ищешь, что тебе по силам.</p><img class="pc-i" src="media/o-phones.webp" alt="" loading="lazy" width="280" height="269"></article>
+        <article class="pc"><div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-sparkles"/></svg></span>Тренажёры</div><p>Интерактивные гайды по темам B1–C1: тексты, диалоги, тесты, чат-партнёр с&nbsp;ИИ.</p><img class="pc-i" src="media/o-pen.webp" alt="" loading="lazy" width="280" height="265"></article>
       </div>
       <h3 class="punch" style="color:#fff">Вот как это выглядит <em>в&nbsp;Notion</em></h3>
       <div class="gal stg">
@@ -1060,11 +1168,11 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   <div class="wrap pad">
     <h2 class="h c mega"><em>Посчитаем</em> честно</h2>
     <div class="args stg">
-      <article class="arg"><span class="ii2"><svg class="ic"><use href="#i-calculator"/></svg></span><h3>Дешевле одного экзамена</h3><p>Goethe B1 в&nbsp;России <span class="v">10 500 ₽</span>. Вся платформа A0–C1 <span class="v">30 €</span>.</p></article>
+      <article class="arg"><img src="media/o-coins.webp" alt="" loading="lazy" width="300" height="263" style="width:64px;height:auto"><h3>Дешевле одного экзамена</h3><p>Goethe B1 в&nbsp;России <span class="v">10 500 ₽</span>. Вся платформа A0–C1 <span class="v">30 €</span>.</p></article>
       <article class="arg"><span class="ii2"><svg class="ic"><use href="#i-infinity"/></svg></span><h3>Платишь один раз</h3><p>Без подписки. Доступ навсегда. Обновления для покупателей бесплатно.</p></article>
       <article class="arg"><span class="ii2"><svg class="ic"><use href="#i-wifi-off"/></svg></span><h3>Работает без интернета</h3><p>В&nbsp;приложении Notion. Пока ребёнок спит, в&nbsp;очереди, в&nbsp;метро. Пятнадцать минут тоже считаются.</p></article>
       <article class="arg"><span class="ii2"><svg class="ic"><use href="#i-route"/></svg></span><h3>Сказано, что учить первым</h3><p>Порядок тем уже выстроен. Открываешь и&nbsp;идёшь.</p></article>
-      <article class="arg"><span class="ii2"><svg class="ic"><use href="#i-gift"/></svg></span><h3>Бонус к&nbsp;A0–C1</h3><p>Платформа A0–A2 на украинском. В&nbsp;подарок.</p></article>
+      <article class="arg"><img src="media/o-trophy.webp" alt="" loading="lazy" width="280" height="291" style="width:58px;height:auto"><h3>Бонус к&nbsp;A0–C1</h3><p>Платформа A0–A2 на украинском. В&nbsp;подарок.</p></article>
       <article class="arg"><span class="ii2"><svg class="ic"><use href="#i-chart-line"/></svg></span><h3>Цена вырастет</h3><p>После новых обновлений. Купившим ничего доплачивать не придётся.</p></article>
     </div>
   </div>
@@ -1131,9 +1239,9 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
     <div class="wrap">
       <h2 class="h c w mega" style="color:#fff">Один платёж. Навсегда</h2>
       <div class="tcs">
-        <article class="tc"><div class="board">Старт<em>A0–A2</em></div><ul class="tl"><li><span>Уровни <b>A0, A1, A2</b></span></li><li><span>Гайды, слова, материалы, трекер</span></li><li><span>Подготовка к&nbsp;экзаменам</span></li><li><span>Доступ навсегда</span></li></ul><span class="price">20 €</span><p class="price-o no">один раз</p><a class="btn" href="https://app.lava.top/801303618?tabId=products&sort=published" target="_blank" rel="noopener">Оплатить</a></article>
-        <article class="tc mid"><div class="board">Всё<em>A0–C1</em></div><span class="rec">Рекомендуем</span><ul class="tl"><li><span><b>Обе платформы</b> сразу</span></li><li><span><span class="v">340+</span> гайдов и <span class="v">7500+</span> слов</span></li><li><span>Подготовка к&nbsp;экзаменам A1–C2</span></li><li><span><b>Бонус</b>: A0–A2 на украинском</span></li><li><span>Обновления бесплатно</span></li></ul><span class="price">30 €</span><p class="price-o">40 €</p><a class="btn" href="https://app.lava.top/801303618?tabId=products&sort=published" target="_blank" rel="noopener">Оплатить</a></article>
-        <article class="tc"><div class="board">Рост<em>B1–C1</em></div><ul class="tl"><li><span>Уровни <b>B1, B2, C1</b></span></li><li><span>Гайды, слова, материалы, трекер</span></li><li><span>Подготовка к&nbsp;экзаменам</span></li><li><span>Доступ навсегда</span></li></ul><span class="price">20 €</span><p class="price-o no">один раз</p><a class="btn" href="https://app.lava.top/801303618?tabId=products&sort=published" target="_blank" rel="noopener">Оплатить</a></article>
+        <article class="tc"><div class="board">Старт<em>A0–A2</em></div><ul class="tl"><li><span>Уровни <b>A0, A1, A2</b></span></li><li><span>Гайды, слова, материалы, трекер</span></li><li><span>Подготовка к&nbsp;экзаменам</span></li><li><span>Доступ навсегда</span></li></ul><div class="tb-lk"><svg class="ic"><use href="#i-lock"/></svg></div><div class="tb-off x"><svg class="ic"><use href="#i-gift"/></svg><span>Бонус</span></div><span class="price">20 €</span><p class="price-o no">один раз</p><a class="btn" href="https://app.lava.top/801303618?tabId=products&sort=published" target="_blank" rel="noopener">Оплатить</a></article>
+        <article class="tc mid"><div class="board">Всё<em>A0–C1</em></div><span class="rec">Рекомендуем</span><ul class="tl"><li><span><b>Обе платформы</b> сразу</span></li><li><span><span class="v">340+</span> гайдов и <span class="v">7500+</span> слов</span></li><li><span>Подготовка к&nbsp;экзаменам A1–C2</span></li><li><span>Обновления бесплатно</span></li></ul><div class="tb-b">Платформа A0–A2 на украинском остаётся у&nbsp;тебя навсегда</div><div class="tb-off"><svg class="ic"><use href="#i-gift"/></svg><span>Бонус</span></div><span class="price">30 €</span><p class="price-o">40 €</p><a class="btn" href="https://app.lava.top/801303618?tabId=products&sort=published" target="_blank" rel="noopener">Оплатить</a></article>
+        <article class="tc"><div class="board">Рост<em>B1–C1</em></div><ul class="tl"><li><span>Уровни <b>B1, B2, C1</b></span></li><li><span>Гайды, слова, материалы, трекер</span></li><li><span>Подготовка к&nbsp;экзаменам</span></li><li><span>Доступ навсегда</span></li></ul><div class="tb-lk"><svg class="ic"><use href="#i-lock"/></svg></div><div class="tb-off x"><svg class="ic"><use href="#i-gift"/></svg><span>Бонус</span></div><span class="price">20 €</span><p class="price-o no">один раз</p><a class="btn" href="https://app.lava.top/801303618?tabId=products&sort=published" target="_blank" rel="noopener">Оплатить</a></article>
       </div>
       <div class="faq">
         <details><summary>Это подписка?<svg class="ic"><use href="#i-chevron-down"/></svg></summary><p>Нет. Платишь один раз. Доступ остаётся навсегда, обновления бесплатные.</p></details>
@@ -1233,13 +1341,6 @@ function goetheInit(){
     G.to(o, {v:to, duration:1.5, ease:'power2.out', onUpdate:function(){ el.textContent = txt(o.v); }, scrollTrigger:{trigger:el, start:'top 92%', once:true}});
   });
 
-  /* hero level loop */
-  (function(){
-    var L = ['A1','A2','B1','B2','C1','C2'], i = 2, t = null, ts = $$('.lvl');
-    if(reduce) return;
-    whenVisible($('.hero'), function(){ if(t) return; t = setInterval(function(){ i=(i+1)%6; ts.forEach(function(x){ x.textContent = L[i]; }); if(G) G.fromTo(ts, {scale:.8, transformOrigin:'50% 100%'}, {scale:1, duration:.55, ease:'elastic.out(1,.5)'}); }, 1900); }, function(){ clearInterval(t); t=null; });
-  })();
-
   /* name builder */
   (function(){
     var h = $('#nmb'), c = $('#nmc'), T = ['Gete. Такого слова нет.','Вставляем o и h. oe читается как ö.','Дефис и Institut. Склеено.','das Institut. Средний род, поэтому das.'], s = 0, t = null;
@@ -1259,8 +1360,8 @@ function goetheInit(){
       {n:'Для себя', lv:[0,1,2,3,4,5], ic:'sparkles', t:'Любой. Можно сразу нужный: экзамен не привязан к сертификату уровнем ниже.', s:'Prüfungsordnung Goethe-Institut', u:'https://www.goethe.de/pro/relaunch/prf/de/Pruefungsordnung.pdf'}
     ];
     var lad = $('#lad'), sp = $$('.sp', lad), bb = $('#bb'), r = $('#goalr'), cur = -1;
-    function pos(i){ var l = lad.getBoundingClientRect(), s = sp[i].getBoundingClientRect(); return {x:s.left-l.left+s.width/2-20, y:s.top-l.top-46}; }
-    function home(){ var s = pos(0); return {x:s.x, y:lad.offsetHeight-sp[0].offsetHeight-46}; }
+    function pos(i){ var l = lad.getBoundingClientRect(), s = sp[i].getBoundingClientRect(); return {x:s.left-l.left+s.width/2-26, y:s.top-l.top-60}; }
+    function home(){ var s = pos(0); return {x:s.x, y:lad.offsetHeight-sp[0].offsetHeight-60}; }
     function place(idx){
       var p = idx<0 ? home() : pos(idx);
       if(cur === -1 || !G || reduce){ if(G) G.set(bb,{x:p.x,y:p.y}); else bb.style.transform='translate('+p.x+'px,'+p.y+'px)'; cur = idx; return; }
@@ -1292,6 +1393,8 @@ function goetheInit(){
       ['Четыре модуля','Lesen. Hören. Schreiben. Sprechen. Сначала письменные, разговор обычно после них.'],
       ['Сертификат','От 60 баллов из 100, и листок твой. Срока годности у него нет, но проверяющий может поставить свой.']
     ];
+    var OB = ['o-env','o-coins','o-calendar','o-safe',null,'o-trophy'], M4 = ['o-book','o-phones','o-pen','o-mic'], dobj = $('#dobj'), lastO = '';
+    function setO(n){ if(n===lastO) return; lastO = n; dobj.src = 'media/'+n+'.webp'; if(G && !reduce) G.fromTo(dobj, {scale:.55, rotation:-18}, {scale:1, rotation:0, duration:.55, ease:'back.out(2.6)', overwrite:true}); }
     var wrap = $('#day'), rows = $$('.dr', wrap), mods = $$('.mods i', wrap), st = $('#dst'), n = $('#dn'), h = $('#dh'), p = $('#dp'), bar = $('#dbar'), cur = -1;
     function set(i, sub){
       if(i !== cur){
@@ -1303,6 +1406,7 @@ function goetheInit(){
       var m = i>4 ? 4 : i===4 ? Math.ceil(sub*4) : 0;
       mods.forEach(function(x,k){ x.classList.toggle('on', k<m); });
       bar.style.transform = 'scaleX('+((i+sub)/6)+')';
+      setO(i===4 ? M4[Math.min(3,Math.floor(sub*4))] : OB[i]);
     }
     if(G && !reduce){
       set(0,0);
@@ -1340,7 +1444,7 @@ function goetheInit(){
     $('#bs').innerHTML = L.map(function(l,i){ return '<button type="button" class="chip dk" data-i="'+i+'">'+l+'</button>'; }).join('');
     $$('button', $('#bs')).forEach(function(b){ b.onclick = function(){ stop(); show(+b.dataset.i); }; });
     tabs($('#bverb'), V.map(function(x){ return x.v; }), 'dk', function(i){
-      vi = i; $('#bde').textContent = V[i].ex; $('#bru').textContent = nb(V[i].ru); $('#bsay').dataset.say = V[i].ex; show(st);
+      vi = i; var bi = $('#bimg'); bi.src = 'media/'+['o-book','o-phones','o-pen','o-mic'][i]+'.webp'; if(G && !reduce) G.fromTo(bi, {scale:.6, rotation:-14}, {scale:1, rotation:0, duration:.55, ease:'back.out(2.4)', overwrite:true}); $('#bde').textContent = V[i].ex; $('#bru').textContent = nb(V[i].ru); $('#bsay').dataset.say = V[i].ex; show(st);
     });
     if(reduce){ show(3); return; }
     show(0);
@@ -1378,7 +1482,8 @@ function goetheInit(){
     var b = $('#bars');
     b.innerHTML = N.map(function(x){ return '<div class="bar"><b lang="de" title="'+x[1]+'" data-say="'+x[0]+'">'+ic(x[2])+x[0]+'</b><div class="t"><i></i></div><span class="m"><span class="v"></span></span></div>'; }).join('');
     var I = $$('.t i', b), M = $$('.m .v', b), seen = false, cur = 2;
-    function draw(){ var d = D[K[cur]]; I.forEach(function(x,i){ x.style.width = seen ? (d[i]/80*100)+'%' : '0'; }); M.forEach(function(x,i){ x.textContent = d[i]+' мин'; }); $('#tnote').textContent = nb(K[cur]+': '+d[4]+'. Бланк ответов уже внутри этого времени. Сверху минут не добавят.'); }
+    var TT = {A1:65,A2:90,B1:165,B2:180,C1:180,C2:195}, tmin = $('#tmin'), tv = {n:165};
+    function draw(){ var d = D[K[cur]]; if(G && !reduce && seen){ G.to(tv, {n:TT[K[cur]], duration:.7, ease:'power2.out', overwrite:true, onUpdate:function(){ tmin.textContent = Math.round(tv.n); }}); } else { tv.n = TT[K[cur]]; tmin.textContent = tv.n; } I.forEach(function(x,i){ x.style.width = seen ? (d[i]/80*100)+'%' : '0'; }); M.forEach(function(x,i){ x.textContent = d[i]+' мин'; }); $('#tnote').textContent = nb(K[cur]+': '+d[4]+'. Бланк ответов уже внутри этого времени. Сверху минут не добавят.'); }
     var set = tabs($('#tl'), K, 'dk', function(i){ cur = i; draw(); });
     set(2);
     whenVisible(b, function(){ seen = true; draw(); }, null, .3);
@@ -1512,6 +1617,119 @@ function goetheInit(){
       G.fromTo(f, {x:s.x,y:s.y}, MP ? {motionPath:{path:[s,{x:(s.x+e.x)/2,y:Math.min(s.y,e.y)-70},e],curviness:1.3},duration:.9,ease:'power2.inOut',onComplete:function(){ f.remove(); var r = add(q); G.from(r,{scale:.7,duration:.45,ease:'back.out(2.4)'}); }} : {x:e.x,y:e.y,duration:.7,onComplete:function(){ f.remove(); add(q); }});
     }
     whenVisible(m, function(){ if(t) return; tick(); t = setInterval(tick, 1700); }, function(){ clearInterval(t); t=null; reset(); }, .3);
+  })();
+
+
+/* dynamic images, listed for build.py: media/lv-A1.webp media/lv-A2.webp media/lv-B1.webp media/lv-B2.webp media/lv-C1.webp media/lv-C2.webp media/o-calendar.webp media/o-safe.webp media/o-env.webp media/o-coins.webp media/o-book.webp media/o-phones.webp media/o-pen.webp media/o-mic.webp media/o-trophy.webp media/o-stamp.webp */
+  /* ---- v2 animations ---- */
+  var LV = ['A1','A2','B1','B2','C1','C2'];
+  LV.forEach(function(l){ var i = new Image(); i.src = 'media/lv-'+l+'.webp'; });
+  ['o-env','o-coins','o-calendar','o-safe','o-book','o-phones','o-pen','o-mic','o-trophy','o-stamp'].forEach(function(n){ var i = new Image(); i.src = 'media/'+n+'.webp'; });
+  (function(){
+    var i = 2, t = null, img = $('#lvimg'), w = $('#whoLv'), wi = 5;
+    if(reduce || !img) return;
+    function pop(el, src){ el.src = src; if(G) G.fromTo(el, {rotationY:-70, scale:.7, transformPerspective:700}, {rotationY:0, scale:1, duration:.7, ease:'back.out(2.2)', overwrite:true}); }
+    whenVisible($('.hero'), function(){ if(t) return; t = setInterval(function(){ i=(i+1)%6; pop(img,'media/lv-'+LV[i]+'.webp'); }, 1900); }, function(){ clearInterval(t); t=null; });
+    var t2 = null;
+    whenVisible(w, function(){ if(t2) return; t2 = setInterval(function(){ wi=(wi+1)%6; pop(w,'media/lv-'+LV[wi]+'.webp'); }, 2300); }, function(){ clearInterval(t2); t2=null; });
+  })();
+  if(G && !reduce){
+    /* hero splits apart on scroll */
+    if(window.innerWidth > 1060){
+      G.to('.hero .t1', {xPercent:-14, ease:'none', scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom top', scrub:.4}});
+      G.to('.hero .t2', {xPercent:12, ease:'none', scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom top', scrub:.4}});
+    }
+    /* panels grow into place */
+    $$('.panel').forEach(function(p){
+      if(p.closest('#except')) return;
+      G.fromTo(p, {scale:.95}, {scale:1, ease:'none', scrollTrigger:{trigger:p, start:'top 100%', end:'top 62%', scrub:.3}});
+    });
+    /* objects pop in, then float */
+    $$('.pc-i,.tile-im,.bimg,.ocard-a,.time-a,.mc .o3d').forEach(function(im){
+      G.from(im, {scale:.45, rotation:-16, duration:.9, ease:'back.out(2)', scrollTrigger:{trigger:im, start:'top 94%', once:true}});
+    });
+    $$('.float').forEach(function(f,i){
+      var tw = G.to(f, {y:i%2?-16:14, rotation:i%2?5:-5, duration:2.6+i*.3, ease:'sine.inOut', yoyo:true, repeat:-1, paused:true});
+      whenVisible(f, function(){ tw.play(); }, function(){ tw.pause(); }, .05);
+    });
+    $$('[data-par],.who-im>img:first-child,#bustim').forEach(function(im){
+      G.fromTo(im, {yPercent:7}, {yPercent:-5, ease:'none', scrollTrigger:{trigger:im, start:'top bottom', end:'bottom top', scrub:.5}});
+    });
+    /* notion shots and phones straighten up */
+    $$('.gal figure').forEach(function(f,i){
+      G.fromTo(f, {rotation:i%2?4:-4, scale:.9}, {rotation:0, scale:1, ease:'none', scrollTrigger:{trigger:f, start:'top 98%', end:'top 62%', scrub:.3}});
+    });
+    $$('.phs .pf').forEach(function(f,i){
+      G.fromTo(f, {yPercent:i%2?-8:8}, {yPercent:i%2?8:-8, ease:'none', scrollTrigger:{trigger:f, start:'top bottom', end:'bottom top', scrub:.5}});
+    });
+    /* card tilt on desktop */
+    if(window.matchMedia('(hover:hover)').matches){
+      document.addEventListener('mousemove', function(e){
+        var c = e.target.closest && e.target.closest('.pc,.tile,.nc,.ec,.arg,.mc,.et');
+        if(!c) return;
+        var r = c.getBoundingClientRect(), x = (e.clientX-r.left)/r.width-.5, y = (e.clientY-r.top)/r.height-.5;
+        G.to(c, {rotationY:x*9, rotationX:-y*9, transformPerspective:900, duration:.4, overwrite:'auto'});
+        c.dataset.tilt = '1';
+      });
+      document.addEventListener('mouseout', function(e){
+        var c = e.target.closest && e.target.closest('[data-tilt]');
+        if(c && (!e.relatedTarget || !c.contains(e.relatedTarget))){ G.to(c, {rotationY:0, rotationX:0, duration:.5, overwrite:'auto'}); }
+      });
+    }
+    /* the letter flies to the university and comes back */
+    (function(){
+      var host = $('#story'), f = $('#envf'), a = $('#envs'), b = $('#envt');
+      G.set(f, {autoAlpha:0});
+      if(!host || !MP || window.innerWidth < 1061) return;
+      function run(){
+        var h = host.getBoundingClientRect(), ra = a.getBoundingClientRect(), rb = b.getBoundingClientRect();
+        var s = {x:ra.left-h.left, y:ra.top-h.top}, e = {x:rb.left-h.left, y:rb.top-h.top}, mid = {x:(s.x+e.x)/2, y:Math.min(s.y,e.y)-26};
+        return G.timeline()
+          .set(f, {autoAlpha:1, x:s.x, y:s.y, rotation:0})
+          .to(f, {motionPath:{path:[s,mid,e],curviness:1.4}, rotation:14, duration:1.1, ease:'power2.inOut'})
+          .fromTo(b, {scale:1}, {scale:1.3, rotation:-10, duration:.14, yoyo:true, repeat:1})
+          .to(f, {motionPath:{path:[e,mid,s],curviness:1.4}, rotation:-10, duration:1, ease:'power2.inOut'})
+          .set(f, {autoAlpha:0});
+      }
+      var t = null;
+      whenVisible(host, function(){ if(t) return; run(); t = setInterval(run, 4600); }, function(){ clearInterval(t); t=null; }, .2);
+    })();
+  }
+
+  /* modules play only on screen */
+  (function(){ var m = $('#mg'); if(!m || reduce) return; whenVisible(m, function(){ m.classList.add('play'); }, function(){ m.classList.remove('play'); }, .1); })();
+
+  /* network around Munich */
+  (function(){
+    var s = $('#net'); if(!s) return;
+    var NS = 'http://www.w3.org/2000/svg', cx = 260, cy = 160, html = '', pts = [];
+    var seed = 7; function rnd(){ seed = (seed*16807)%2147483647; return (seed-1)/2147483646; }
+    for(var i=0;i<98;i++){ var a = i*2.399963, r = 40+Math.sqrt(i/98)*190+rnd()*16, x = cx+Math.cos(a)*r*1.18, y = cy+Math.sin(a)*r*.62; pts.push([Math.max(6,Math.min(514,x)),Math.max(6,Math.min(314,y))]); }
+    var lines = pts.filter(function(_,i){ return i%7===3; });
+    html += lines.map(function(p,i){ return '<line class="nl" x1="'+cx+'" y1="'+cy+'" x2="'+p[0].toFixed(1)+'" y2="'+p[1].toFixed(1)+'" stroke="#fff" stroke-opacity=".4" stroke-width="1.4"/>'; }).join('');
+    html += pts.map(function(p){ return '<circle class="nd" cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="4" fill="#fff"/>'; }).join('');
+    html += lines.map(function(p){ return '<circle class="np" r="5" fill="#EBD19C" cx="'+cx+'" cy="'+cy+'"/>'; }).join('');
+    html += '<circle cx="'+cx+'" cy="'+cy+'" r="30" fill="#EBD19C"/><circle id="nring" cx="'+cx+'" cy="'+cy+'" r="30" fill="none" stroke="#EBD19C" stroke-width="3"/>';
+    s.innerHTML = html;
+    if(!G || reduce) return;
+    G.from($$('.nd',s), {attr:{r:0}, duration:.45, ease:'back.out(3)', stagger:.012, scrollTrigger:{trigger:s, start:'top 84%', once:true}});
+    var tl = G.timeline({repeat:-1, paused:true});
+    $$('.np',s).forEach(function(c,i){ var p = lines[i]; tl.fromTo(c, {attr:{cx:cx,cy:cy}}, {attr:{cx:p[0],cy:p[1]}, duration:1.5, ease:'power1.inOut'}, i*.2); });
+    tl.fromTo('#nring', {attr:{r:30}, opacity:1}, {attr:{r:92}, opacity:0, duration:1.6, ease:'power2.out'}, 0);
+    whenVisible(s, function(){ tl.play(); }, function(){ tl.pause(); }, .1);
+  })();
+
+  /* pass mark gauge */
+  (function(){
+    var r = $('#gr'); if(!r) return;
+    var v = $('#gv'), st = $('#gs'), arc = $('#garc');
+    function draw(n){ n = Math.round(n); v.textContent = n; arc.setAttribute('stroke-dashoffset', 100-n); st.textContent = n>=60 ? 'bestanden' : 'nicht bestanden'; }
+    r.addEventListener('input', function(){ draw(+r.value); });
+    draw(+r.value);
+    if(G && !reduce){
+      var o = {n:30};
+      G.to(o, {n:72, duration:1.8, ease:'power2.out', onUpdate:function(){ r.value = Math.round(o.n); draw(o.n); }, scrollTrigger:{trigger:r, start:'top 84%', once:true}});
+    }
   })();
 
   /* video */
