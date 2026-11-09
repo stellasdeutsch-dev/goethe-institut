@@ -722,6 +722,29 @@ figure.zgc{margin:0}
 .zt4 small.fail{color:#D0491F;font-weight:600}
 @media (max-width:760px){.zt-w{grid-template-columns:1fr}.zt4{grid-template-columns:1fr 1fr;gap:14px}.zt4 svg{max-width:120px}}
 /*/vz*/
+/*ret*/
+.ret-loop{max-width:38em;margin:clamp(26px,3.6vw,44px) auto;padding:0 var(--gut);text-align:center;font-size:clamp(18px,1.6vw,21px);line-height:1.4;color:var(--ink);text-wrap:pretty}
+.ret-cp{box-sizing:border-box;width:calc(100% - 2*var(--gut));max-width:1180px;margin:clamp(18px,2.6vw,30px) auto;padding:clamp(18px,2vw,24px) clamp(20px,3vw,34px);background:var(--pa);border-radius:var(--r2);display:grid;grid-template-columns:minmax(220px,.42fr) 1fr;gap:12px 36px;align-items:center}
+.ret-cp-l b{display:block;font:900 clamp(30px,2.8vw,38px)/1 var(--head);color:var(--ink)}
+.ret-cp-b{display:block;height:10px;border-radius:5px;background:var(--li);margin-top:12px;overflow:hidden}
+.ret-cp-b i{display:block;height:100%;width:var(--p);border-radius:5px;background:var(--or)}
+.ret-cp p{margin:0;font-size:16px;line-height:1.42;color:var(--ink);text-wrap:pretty}
+.sec.ret-br{margin-bottom:calc(-1*var(--gut))}
+.ret-br-g{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:0 clamp(28px,5vw,72px);align-items:end}
+.ret-br-p{display:block;width:100%;max-width:400px;height:auto;justify-self:center}
+.ret-br-t{align-self:center;padding-block:clamp(28px,4vw,56px)}
+.ret-br .h{font-size:clamp(46px,5.4vw,78px)}
+.ret-sl{grid-template-columns:1fr;margin:24px 0 0}
+.ret-sl li{font-size:17px}
+.ret-why{margin:20px 0 24px;font-size:17px;line-height:1.45;color:var(--ink);text-wrap:pretty}
+@media (max-width:760px){
+  .ret-cp{grid-template-columns:1fr}
+  .ret-br-g{grid-template-columns:1fr}
+  .ret-br-p{max-width:320px}
+  .ret-br-t{text-align:center;padding-top:28px;padding-bottom:calc(var(--gut) + 36px)}
+  .ret-sl{justify-items:center;text-align:left;width:fit-content;margin-inline:auto}
+}
+/*/ret*/
 </style>
 
 </head>
@@ -829,6 +852,8 @@ figure.zgc{margin:0}
   <p class="hero-lede"><i></i><span>Что это, какой экзамен нужен и&nbsp;где все спотыкаются</span></p>
 </section>
 
+<p class="ret-loop">Шесть уровней экзамена. Один из них пускает в&nbsp;немецкий вуз без языкового экзамена. <b>Какой, скажу в&nbsp;конце.</b></p>
+
 <section class="sec" id="fail">
   <div class="panel k pad">
     <svg class="pt" aria-hidden="true"><rect width="100%" height="100%" fill="url(#hex)"/></svg>
@@ -850,7 +875,7 @@ figure.zgc{margin:0}
         </article>
         <article class="pc">
           <div class="pc-t"><span class="ii"><svg class="ic"><use href="#i-lightbulb"/></svg></span>Что я&nbsp;понял</div>
-          <p>Гёте это не вуз. Диплом тут не дают. Дают курсы и&nbsp;экзамены. Письмо храню до сих пор.</p><img class="pc-i" src="../media/o-shield.webp" alt="" loading="lazy" width="267" height="307">
+          <p>В&nbsp;Гёте дают курсы и&nbsp;экзамены, диплома там нет. Письмо храню до сих пор.</p><img class="pc-i" src="../media/o-shield.webp" alt="" loading="lazy" width="267" height="307">
         </article>
         <img id="envf" src="../media/o-env.webp" alt="" aria-hidden="true" width="300" height="203">
       </div>
@@ -972,6 +997,8 @@ figure.zgc{margin:0}
   </div>
 </section>
 
+<div class="ret-cp"><div class="ret-cp-l"><b>Почти треть позади</b><span class="ret-cp-b" style="--p:29%"><i></i></span></div><p>Из <span class="v">8 минут</span> осталось около шести. Дальше экзамен по шагам: запись, оплата, дата, телефон. Телефон, кстати, заберут.</p></div>
+
 <section class="sec" id="how">
   <div class="wrap pad" style="padding-bottom:0">
     <h2 class="h c mega"><em>Как устроен</em> экзамен</h2>
@@ -1074,6 +1101,8 @@ figure.zgc{margin:0}
     </div>
   </div>
 </section>
+
+<div class="ret-cp"><div class="ret-cp-l"><b>Две трети позади</b><span class="ret-cp-b" style="--p:70%"><i></i></span></div><p>Осталось меньше трёх минут. Дальше мины: слово «сдать» и&nbsp;ещё пять. А&nbsp;потом письмо, где мины ищешь ты.</p></div>
 
 <section class="sec" id="errors">
   <div class="panel b pad">
@@ -1202,7 +1231,7 @@ figure.zgc{margin:0}
           <li><span>Порог <span class="v">60 из 100</span></span></li>
         </ul>
       </div>
-      <div class="bcall">Гёте это не вуз. Гёте это проверка.</div>
+      <div class="bcall">Гёте проверяет язык. Диплом выдаёт вуз.</div>
     </div>
   </div>
 </section>
